@@ -13,6 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -31,12 +37,12 @@ a {
   color: #fff;
   text-decoration: none;
   border: 1px solid #fff;
+  background-color: #27ae60;
   padding: 5px 20px;
   border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s;
 
   &:hover {
-    background-color: #fff;
-    color: #2ecc71;
+    background-color: #219150;
   }
 }

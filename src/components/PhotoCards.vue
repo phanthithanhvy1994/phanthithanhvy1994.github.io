@@ -130,8 +130,16 @@ export default {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-weight: bold;
       }
     }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .photo-cards {
+    margin-top: 180px;
   }
 }
 </style>

@@ -37,6 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap */
   }
 
   .logo-container {
@@ -63,6 +64,38 @@ header {
     li {
       margin-left: 20px;
     }
+
+    a {
+      padding: 5px 10px;
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    width: 100%;
+    text-align: center;
   }
 }
 </style>
